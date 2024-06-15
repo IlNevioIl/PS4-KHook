@@ -20,13 +20,13 @@
 /* 9.00 */
 #define KERNEL_PRINTF_900               KERNEL_BASE + 0x000B7A30
 #define KERNEL_SNPRINTF_900             KERNEL_BASE + 0x000B7D30
-//#define KERNEL_DISPATCH_CODE_CAVE_900   KERNEL_BASE + 0x00017260 // hammer_time
+#define KERNEL_DISPATCH_CODE_CAVE_900   KERNEL_BASE + 0x00093150 // hammer_time  ( Not sure if its this offset or 0x313010 )
 #define KERNEL_MEMCPY_900               KERNEL_BASE + 0x002714B0
 #define KERNEL_COPYIN_900               KERNEL_BASE + 0x002716A0
 //#define KERNEL_MAP_900                  KERNEL_BASE + 0x01AC60E0  No idea
 #define KERNEL_KMEM_ALLOC_900           KERNEL_BASE + 0x0037BE70
 #define KERNEL_KMEM_FREE_900            KERNEL_BASE + 0x0037C040
-//#define KERNEL_PAGEDAEMON_WAKEUP_900    KERNEL_BASE + 0x001EE240 No idea
+#define KERNEL_PAGEDAEMON_WAKEUP_900    KERNEL_BASE + 0x00107490 //Not sure if this is the correct one
 /* End of 9.00 */
 #define KEXEC_ARGS_BUFFER           (void *)0xDEAD0000
 
