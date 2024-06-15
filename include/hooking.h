@@ -5,7 +5,7 @@
 #include <payload_utils.h>
 #include <fw_defines.h>
 
-#define KERNEL_BASE &((uint8_t *)__readmsr(0xC0000082))[-K505_XFAST_SYSCALL]
+//#define KERNEL_BASE &((uint8_t *)__readmsr(0xC0000082))[-K505_XFAST_SYSCALL]
 
 #define KERNEL_PRINTF               KERNEL_BASE + 0x00436040
 #define KERNEL_SNPRINTF             KERNEL_BASE + 0x00436350
