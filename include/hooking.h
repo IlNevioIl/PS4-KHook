@@ -5,28 +5,18 @@
 #include <payload_utils.h>
 #include <fw_defines.h>
 
-//#define KERNEL_BASE &((uint8_t *)__readmsr(0xC0000082))[-K505_XFAST_SYSCALL]
-
-#define KERNEL_PRINTF               KERNEL_BASE + 0x00436040
-#define KERNEL_SNPRINTF             KERNEL_BASE + 0x00436350
-#define KERNEL_DISPATCH_CODE_CAVE   KERNEL_BASE + 0x00017260 // hammer_time
-#define KERNEL_MEMCPY               KERNEL_BASE + 0x001EA530
-#define KERNEL_COPYIN               KERNEL_BASE + 0x001EA710
-#define KERNEL_MAP                  KERNEL_BASE + 0x01AC60E0
-#define KERNEL_KMEM_ALLOC           KERNEL_BASE + 0x000FCC80
-#define KERNEL_KMEM_FREE            KERNEL_BASE + 0x000FCE50
-#define KERNEL_PAGEDAEMON_WAKEUP    KERNEL_BASE + 0x001EE240
+#define KERNEL_BASE &((uint8_t *)__readmsr(0xC0000082))[-K505_XFAST_SYSCALL]
 
 /* 9.00 */
-#define KERNEL_PRINTF_900               KERNEL_BASE + 0x000B7A30
-#define KERNEL_SNPRINTF_900             KERNEL_BASE + 0x000B7D30
-#define KERNEL_DISPATCH_CODE_CAVE_900   KERNEL_BASE + 0x00093150 // hammer_time  ( Not sure if its this offset or 0x313010 )
-#define KERNEL_MEMCPY_900               KERNEL_BASE + 0x002714B0
-#define KERNEL_COPYIN_900               KERNEL_BASE + 0x002716A0
-#define KERNEL_MAP_900                  KERNEL_BASE + 0x02268D48
-#define KERNEL_KMEM_ALLOC_900           KERNEL_BASE + 0x0037BE70
-#define KERNEL_KMEM_FREE_900            KERNEL_BASE + 0x0037C040
-#define KERNEL_PAGEDAEMON_WAKEUP_900    KERNEL_BASE + 0x00107490 //Not sure if this is the correct one
+#define KERNEL_PRINTF               KERNEL_BASE + 0x000B7A30
+#define KERNEL_SNPRINTF             KERNEL_BASE + 0x000B7D30
+#define KERNEL_DISPATCH_CODE_CAVE   KERNEL_BASE + 0x00093150 // hammer_time
+#define KERNEL_MEMCPY               KERNEL_BASE + 0x002714B0
+#define KERNEL_COPYIN               KERNEL_BASE + 0x002716A0
+#define KERNEL_MAP                  KERNEL_BASE + 0x02268D48
+#define KERNEL_KMEM_ALLOC           KERNEL_BASE + 0x0037BE70
+#define KERNEL_KMEM_FREE            KERNEL_BASE + 0x0037C040
+#define KERNEL_PAGEDAEMON_WAKEUP    KERNEL_BASE + 0x00107490
 /* End of 9.00 */
 #define KEXEC_ARGS_BUFFER           (void *)0xDEAD0000
 
