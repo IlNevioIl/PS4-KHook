@@ -1,5 +1,5 @@
 # PS4 KHook
-[![API Version Compatibility](https://img.shields.io/badge/PS4%20Firmware%20Target-5.05-blue.svg)]()
+[![API Version Compatibility](https://img.shields.io/badge/PS4%20Firmware%20Target-9.00-blue.svg)]()
 
 PS4 KHook is a minimalist kernel hooking payload. It targets 5.05 but it can be used with any firmware (or even non-PS4 systems) with modifications. It's primary intent is for exploit development / debugging though it can be used anywhere hooking is needed (though Mira is recommended for long-term hooks for things like homebrew). It doesn't require a daemon to run for state tracking as it uses a code cave and a dispatch table.
 
