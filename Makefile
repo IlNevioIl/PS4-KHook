@@ -1,4 +1,4 @@
-PS4SDK	:=	$(PS4SDK)
+PS4SDK	:=	$(PS4SDK)/libPS4
 
 CC		:=	gcc
 AS		:=	gcc
